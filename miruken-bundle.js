@@ -3229,8 +3229,11 @@ new function () { // closure
         return false;
     }
 
-    function _matchString(match) {
-        return $isString(match) && this.constraint == match;
+    function _matchString(match, variance) {
+        if (!$isString(match)) { return false;}
+        return variance === Variance.Invariant
+            ? this.constraint == match
+            : this.constraint.toLowerCase() == match.toLowerCase();
     }
 
     function _matchRegExp(match, variance) {

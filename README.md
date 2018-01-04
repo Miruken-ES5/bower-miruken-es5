@@ -1,2 +1,2 @@
-# bower-miruken-es5
-Bower package containing just miruken
+# A Miruken-only distribution
+[http://miruken.com/documentation/master/miruken-es5](http://miruken.com/documentation/master/miruken-es5)

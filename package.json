@@ -1,0 +1,24 @@
+{
+  "name": "miruken-es5",
+  "version": "2.0.4",
+  "description": "A Miruken-only distribution",
+  "author": "Miruken",
+  "contributors": [
+    {
+      "name": "Craig Neuwirt",
+      "email": "craig.neuwirt@improving.com"
+    },
+    {
+      "name": "Michael Dudley",
+      "email": "michael.dudley@improving.com"
+    }
+  ],
+  "main": "miruken-bundle.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Miruken-ES5/bower-miruken-es5"
+  },
+  "bugs": {
+    "url": "https://github.com/Miruken-ES5/miruken/issues"
+  }
+}

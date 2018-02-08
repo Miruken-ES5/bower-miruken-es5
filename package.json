@@ -1,6 +1,6 @@
 {
   "name": "miruken-es5",
-  "version": "2.0.28",
+  "version": "2.0.29",
   "description": "A Miruken-only distribution",
   "author": "Miruken",
   "contributors": [
@@ -22,4 +22,5 @@
     "url": "https://github.com/Miruken-ES5/miruken/issues"
   }
 }
+
 

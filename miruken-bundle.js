@@ -6331,7 +6331,7 @@ new function () { // closure
      */
     base2.package(this, {
         name:    "miruken",
-        version: "2.0.35",
+        version: "2.0.38",
         exports: "Enum,Flags,Variance,Protocol,StrictProtocol,Delegate,Miruken,MetaStep,MetaMacro," +
                  "Initializing,Disposing,DisposingMixin,Resolving,Invoking,Parenting,Starting,Startup," +
                  "Facet,Interceptor,InterceptorSelector,ProxyBuilder,Modifier,ArrayManager,IndexedList," +
@@ -9108,7 +9108,8 @@ new function () { // closure
     miruken.package(this, {
         name:    "validate",
         imports: "miruken,miruken.callback,miruken.validate",
-        exports: "ValidationRegistry,ValidateJsCallbackHandler,$required,$nested"
+        exports: "ValidationRegistry,ValidateJsCallbackHandler," +
+                 "$required,$notEmpty,$nested"
     });
 
     eval(this.imports);
@@ -9124,7 +9125,14 @@ new function () { // closure
          * @readOnly
          * @for miruken.validate.$ 
          */
-        $required = Object.freeze({ presence: true }),
+        $required = Object.freeze({ presence: true }), 
+        /**
+         * Shortcut to indicate not empty property.
+         * @property {Object} $notEmpty
+         * @readOnly
+         * @for miruken.validate.$ 
+         */
+        $notEmpty = Object.freeze({ presence: { allowEmpty: false } }),       
         /**
          * Shortcut to indicate nested validation.
          * @property {Object} $nested
